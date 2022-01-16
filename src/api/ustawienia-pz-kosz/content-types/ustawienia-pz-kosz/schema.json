@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "ustawienia_pz_koszs",
+  "info": {
+    "singularName": "ustawienia-pz-kosz",
+    "pluralName": "ustawienia-pz-koszs",
+    "displayName": "Ustawienia PZKosz"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "LeagueId": {
+      "type": "integer"
+    },
+    "SeasonId": {
+      "type": "integer"
+    },
+    "GroupId": {
+      "type": "integer"
+    },
+    "TeamId": {
+      "type": "integer"
+    }
+  }
+}

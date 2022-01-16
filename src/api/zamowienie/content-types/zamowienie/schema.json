@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "zamowienies",
+  "info": {
+    "singularName": "zamowienie",
+    "pluralName": "zamowienies",
+    "displayName": "Zamowienie",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "DataZamowienia": {
+      "type": "date"
+    },
+    "DataWyslania": {
+      "type": "date"
+    },
+    "Wyslane": {
+      "type": "boolean"
+    },
+    "Zrealizowane": {
+      "type": "boolean"
+    },
+    "Notatka": {
+      "type": "text"
+    },
+    "produkts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::produkt.produkt"
+    },
+    "NumerZamowienia": {
+      "type": "biginteger"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "zamowienie"
+    }
+  }
+}

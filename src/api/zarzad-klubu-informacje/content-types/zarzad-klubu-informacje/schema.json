@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "zarzad_klubu_informacjes",
+  "info": {
+    "singularName": "zarzad-klubu-informacje",
+    "pluralName": "zarzad-klubu-informacjes",
+    "displayName": "Zarząd Klubu Informacje"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Opis": {
+      "type": "richtext"
+    }
+  }
+}

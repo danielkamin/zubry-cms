@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tabela_u19s",
+  "info": {
+    "singularName": "tabela-u19",
+    "pluralName": "tabela-u19s",
+    "displayName": "Tabela U19"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Pozycja": {
+      "type": "integer"
+    },
+    "Nazwa": {
+      "type": "string"
+    },
+    "Mecze": {
+      "type": "integer"
+    },
+    "Wygrane": {
+      "type": "integer"
+    },
+    "Przegrane": {
+      "type": "integer"
+    },
+    "Punkty": {
+      "type": "integer"
+    }
+  }
+}

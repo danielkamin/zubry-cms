@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reklamacjes",
+  "info": {
+    "singularName": "reklamacje",
+    "pluralName": "reklamacjes",
+    "displayName": "Reklamacje"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "DataReklamacji": {
+      "type": "date"
+    },
+    "DataZrealizowaniaReklamacji": {
+      "type": "date"
+    },
+    "Zrealizowana": {
+      "type": "boolean"
+    },
+    "Notatka": {
+      "type": "text"
+    },
+    "zamowienie": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::zamowienie.zamowienie"
+    },
+    "User": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "reklamacjes"
+    }
+  }
+}

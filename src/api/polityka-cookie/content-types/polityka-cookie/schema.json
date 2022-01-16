@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "polityka_cookies",
+  "info": {
+    "singularName": "polityka-cookie",
+    "pluralName": "polityka-cookies",
+    "displayName": "Polityka Cookie"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Tresc": {
+      "type": "richtext"
+    }
+  }
+}

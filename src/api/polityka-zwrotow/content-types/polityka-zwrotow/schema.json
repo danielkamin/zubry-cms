@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "polityka_zwrotows",
+  "info": {
+    "singularName": "polityka-zwrotow",
+    "pluralName": "polityka-zwrotows",
+    "displayName": "Polityka Zwrotow"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Tresc": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "regulamin_sklepus",
+  "info": {
+    "singularName": "regulamin-sklepu",
+    "pluralName": "regulamin-sklepus",
+    "displayName": "Regulamin Sklepu"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Tresc": {
+      "type": "richtext"
+    }
+  }
+}

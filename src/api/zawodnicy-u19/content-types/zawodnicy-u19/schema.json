@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "zawodnicy_u19s",
+  "info": {
+    "singularName": "zawodnicy-u19",
+    "pluralName": "zawodnicy-u19s",
+    "displayName": "Zawodnicy U19"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Numer": {
+      "type": "integer"
+    },
+    "Imie": {
+      "type": "string"
+    },
+    "Nazwisko": {
+      "type": "string"
+    },
+    "DataUrodzenia": {
+      "type": "date"
+    },
+    "Pozycja": {
+      "type": "string"
+    },
+    "Zdjecie": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

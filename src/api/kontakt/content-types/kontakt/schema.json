@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "kontakts",
+  "info": {
+    "singularName": "kontakt",
+    "pluralName": "kontakts",
+    "displayName": "Kontakt"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Telefon": {
+      "type": "string"
+    },
+    "Adres": {
+      "type": "string"
+    },
+    "Godziny": {
+      "type": "string"
+    }
+  }
+}

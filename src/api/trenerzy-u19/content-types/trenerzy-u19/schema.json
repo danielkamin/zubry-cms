@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trenerzy_u19s",
+  "info": {
+    "singularName": "trenerzy-u19",
+    "pluralName": "trenerzy-u19s",
+    "displayName": "Trenerzy U19"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Imie": {
+      "type": "string"
+    },
+    "Nazwisko": {
+      "type": "string"
+    },
+    "Stanowisko": {
+      "type": "string"
+    },
+    "Zdjecie": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

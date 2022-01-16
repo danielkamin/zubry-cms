@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "polityka_prywatnoscis",
+  "info": {
+    "singularName": "polityka-prywatnosci",
+    "pluralName": "polityka-prywatnoscis",
+    "displayName": "Polityka Prywatnosci"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Tresc": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "historias",
+  "info": {
+    "singularName": "historia",
+    "pluralName": "historias",
+    "displayName": "Historia"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "historia": {
+      "type": "richtext"
+    }
+  }
+}

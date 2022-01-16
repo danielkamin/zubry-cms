@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "zawodnicy_3_lms",
+  "info": {
+    "singularName": "zawodnicy-3-lm",
+    "pluralName": "zawodnicy-3-lms",
+    "displayName": "Zawodnicy 3LM"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Numer": {
+      "type": "integer"
+    },
+    "Imie": {
+      "type": "string"
+    },
+    "Nazwisko": {
+      "type": "string"
+    },
+    "DataUrodzenia": {
+      "type": "date"
+    },
+    "Pozycja": {
+      "type": "string"
+    },
+    "Zdjecie": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

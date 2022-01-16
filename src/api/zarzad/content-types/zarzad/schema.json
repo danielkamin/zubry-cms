@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "zarzads",
+  "info": {
+    "singularName": "zarzad",
+    "pluralName": "zarzads",
+    "displayName": "Zarzad"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Imie": {
+      "type": "string"
+    },
+    "Nazwisko": {
+      "type": "string"
+    },
+    "Stanowisko": {
+      "type": "string"
+    },
+    "Zdjecie": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

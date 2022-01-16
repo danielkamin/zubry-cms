@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tabela_3_lms",
+  "info": {
+    "singularName": "tabela-3-lm",
+    "pluralName": "tabela-3-lms",
+    "displayName": "Tabela 3LM"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nazwa": {
+      "type": "string"
+    },
+    "Pozycja": {
+      "type": "integer"
+    },
+    "Mecze": {
+      "type": "integer"
+    },
+    "Wygrane": {
+      "type": "integer"
+    },
+    "Przegrane": {
+      "type": "integer"
+    },
+    "Punkty": {
+      "type": "integer"
+    }
+  }
+}

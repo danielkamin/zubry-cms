@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "terminarz_3_lms",
+  "info": {
+    "singularName": "terminarz-3-lm",
+    "pluralName": "terminarz-3-lms",
+    "displayName": "Terminarz 3LM"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Gospodarze": {
+      "type": "string"
+    },
+    "GospodarzePunkty": {
+      "type": "integer"
+    },
+    "GosciePunkty": {
+      "type": "integer"
+    },
+    "Goscie": {
+      "type": "string"
+    },
+    "Data": {
+      "type": "datetime"
+    }
+  }
+}

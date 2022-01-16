@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adresses",
+  "info": {
+    "singularName": "adres",
+    "pluralName": "adresses",
+    "displayName": "Adres"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Kraj": {
+      "type": "string"
+    },
+    "Region": {
+      "type": "string"
+    },
+    "Miasto": {
+      "type": "string"
+    },
+    "Ulica": {
+      "type": "string"
+    },
+    "Budynek": {
+      "type": "string"
+    },
+    "Lokal": {
+      "type": "string"
+    },
+    "KodPocztowy": {
+      "type": "string"
+    }
+  }
+}

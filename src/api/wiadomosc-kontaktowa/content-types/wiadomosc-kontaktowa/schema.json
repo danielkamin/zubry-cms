@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wiadomosc_kontaktowas",
+  "info": {
+    "singularName": "wiadomosc-kontaktowa",
+    "pluralName": "wiadomosc-kontaktowas",
+    "displayName": "Wiadomość Kontaktowa"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nazwa": {
+      "type": "string"
+    },
+    "Wiadomosc": {
+      "type": "text"
+    },
+    "Email": {
+      "type": "email"
+    }
+  }
+}

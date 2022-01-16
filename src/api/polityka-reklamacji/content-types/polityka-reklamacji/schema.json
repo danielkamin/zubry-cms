@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "polityka_reklamacjis",
+  "info": {
+    "singularName": "polityka-reklamacji",
+    "pluralName": "polityka-reklamacjis",
+    "displayName": "Polityka Reklamacji"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Tresc": {
+      "type": "richtext"
+    }
+  }
+}

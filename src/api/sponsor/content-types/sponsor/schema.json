@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sponsors",
+  "info": {
+    "singularName": "sponsor",
+    "pluralName": "sponsors",
+    "displayName": "Sponsorzy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Opis": {
+      "type": "text"
+    },
+    "Nazwa": {
+      "type": "string"
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "Kolejnosc": {
+      "type": "integer"
+    },
+    "Link": {
+      "type": "string"
+    }
+  }
+}
