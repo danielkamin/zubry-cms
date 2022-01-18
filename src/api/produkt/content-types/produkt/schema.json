@@ -4,7 +4,8 @@
   "info": {
     "singularName": "produkt",
     "pluralName": "produkts",
-    "displayName": "Produkt"
+    "displayName": "Produkt",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,21 +19,28 @@
       "type": "decimal"
     },
     "Zdjecie": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "Opis": {
       "type": "text"
     },
-    "kategoria_produktu": {
+    "Kategoria": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::kategoria-produktu.kategoria-produktu"
+    },
+    "Dostepne_Rozmiary": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::rozmiar-produktu.rozmiar-produktu",
+      "inversedBy": "produkts"
     }
   }
 }

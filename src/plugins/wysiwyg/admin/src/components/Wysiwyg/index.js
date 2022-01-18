@@ -28,6 +28,7 @@ const Wysiwyg = ({
       const newValue = value ? `${value}${imgTag}` : imgTag;
       onChange({ target: { name, value: newValue } });
     }
+    // Handle videos and other type of files by adding some code
   };
   const handleToggle = () => setIsOpen((prev) => !prev);
   return (
