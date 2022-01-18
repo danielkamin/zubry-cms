@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "polityka_dostaws",
+  "info": {
+    "singularName": "polityka-dostaw",
+    "pluralName": "polityka-dostaws",
+    "displayName": "Polityka Dostaw"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Tresc": {
+      "type": "richtext"
+    }
+  }
+}
