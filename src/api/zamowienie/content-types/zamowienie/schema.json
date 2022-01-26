@@ -27,10 +27,10 @@
     "Notatka": {
       "type": "text"
     },
-    "produkts": {
+    "Zamowione_produkty": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::produkt.produkt"
+      "target": "api::szczegoly-zamowienia.szczegoly-zamowienia"
     },
     "NumerZamowienia": {
       "type": "biginteger"
@@ -40,6 +40,18 @@
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "zamowienie"
+    },
+    "Miasto": {
+      "type": "string"
+    },
+    "Numer_Budynku": {
+      "type": "string"
+    },
+    "Numer_Mieszkania": {
+      "type": "string"
+    },
+    "Kod_Pocztowy": {
+      "type": "string"
     }
   }
 }

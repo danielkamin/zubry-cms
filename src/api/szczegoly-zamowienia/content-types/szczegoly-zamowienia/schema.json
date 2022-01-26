@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "szczegoly_zamowienias",
+  "info": {
+    "singularName": "szczegoly-zamowienia",
+    "pluralName": "szczegoly-zamowienias",
+    "displayName": "Szczegóły zamowienia",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Zamowiony_produkt": {
+      "type": "string"
+    },
+    "Ilosc": {
+      "type": "integer"
+    },
+    "Produkt": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::produkt.produkt"
+    },
+    "Rozmiar": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dostepne-rozmiary.dostepne-rozmiary"
+    }
+  }
+}

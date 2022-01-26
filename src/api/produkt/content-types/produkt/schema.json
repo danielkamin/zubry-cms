@@ -36,11 +36,10 @@
       "relation": "oneToOne",
       "target": "api::kategoria-produktu.kategoria-produktu"
     },
-    "Dostepne_Rozmiary": {
+    "Rozmiary": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::rozmiar-produktu.rozmiar-produktu",
-      "inversedBy": "produkts"
+      "relation": "oneToMany",
+      "target": "api::dostepne-rozmiary.dostepne-rozmiary"
     }
   }
 }
