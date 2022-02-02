@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_zamowienie_szczegolies",
+  "info": {
+    "displayName": "Produkty",
+    "icon": "cart-plus",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Produkt": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::produkt.produkt"
+    },
+    "Rozmiar": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dostepne-rozmiary.dostepne-rozmiary"
+    },
+    "Ilosc": {
+      "type": "integer"
+    }
+  }
+}

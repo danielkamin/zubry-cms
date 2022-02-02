@@ -10,21 +10,20 @@ module.exports = createCoreController(
   "api::wiadomosc-kontaktowa.wiadomosc-kontaktowa",
   ({ strapi }) => ({
     async send(ctx) {
-      const { nazwa, wiadomosc, email } = ctx.request.body;
-      if (!nazwa || !wiadomosc || !email)
+      const { data } = ctx.request.body;
+      if (!data.nazwa || !data.wiadomosc || !data.email)
         return ctx.send("Brak wszystkich informacji!");
 
       const message = `<div>
     <h5>Wiadomość kontaktowa.</h5>
-    <p>Imię i nazwisko osoby kontaktowej: ${nazwa}</p>
-    <p>Email kontaktowy: ${email}</p>
-    <p>Treść: ${wiadomosc}</p>
+    <p>Imię i nazwisko osoby kontaktowej: ${data.nazwa}</p>
+    <p>Email kontaktowy: ${data.email}</p>
+    <p>Treść: ${data.wiadomosc}</p>
     </div>`;
       try {
-        strapi.plugins["email"].services.email.send({
-          to: "zubryleospedbialystok@gmail.com",
-          from: "zubryleospedbialystok@gmail.com",
-          replyTo: "zubryleospedbialystok@gmail.com",
+        await strapi.plugins["email"].services.email.send({
+          to: process.env.EMAIL_ADMIN,
+          from: "Żubry Białystok",
           subject: "Nowa wiadomość kontaktowa",
           html: message,
         });

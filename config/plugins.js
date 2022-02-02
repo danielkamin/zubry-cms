@@ -7,20 +7,24 @@ module.exports = ({ env }) => ({
     config: {},
   },
   email: {
-    provider: "smtp",
-    providerOptions: {
-      host: env("SMTP_HOST", "smtp.gmail.com"),
-      port: 465,
-      secure: true,
-      username: env("SMTP_USERNAME"),
-      password: env("SMTP_PASSWORD"),
-      rejectUnauthorized: true,
-      requireTLS: true,
-      connectionTimeout: 1,
-    },
-    settings: {
-      from: "zubryleospedbialystok@gmail.com",
-      replyTo: "zubryleospedbialystok@gmail.com",
+    config: {
+      provider: "nodemailer",
+      providerOptions: {
+        host: env("SMTP_HOST", "smtp.gmail.com"),
+        port: 465,
+        secure: true,
+        auth: {
+          user: env("EMAIL_USERNAME"),
+          pass: env("EMAIL_PASSWORD"),
+        },
+        tls: {
+          rejectUnauthorized: env("NODE_ENV") === "development" ? false : true,
+        },
+      },
+      settings: {
+        defaultFrom: "zubryleospedbialystok@gmail.com",
+        defaultReplyTo: "zubryleospedbialystok@gmail.com",
+      },
     },
   },
 });

@@ -80,12 +80,6 @@
       "relation": "oneToMany",
       "target": "api::reklamacje.reklamacje",
       "mappedBy": "User"
-    },
-    "zwroty": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::zwroty.zwroty",
-      "mappedBy": "user"
     }
   }
 }

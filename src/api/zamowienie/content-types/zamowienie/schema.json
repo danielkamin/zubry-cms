@@ -27,14 +27,6 @@
     "Notatka": {
       "type": "text"
     },
-    "Zamowione_produkty": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::szczegoly-zamowienia.szczegoly-zamowienia"
-    },
-    "NumerZamowienia": {
-      "type": "biginteger"
-    },
     "user": {
       "type": "relation",
       "relation": "manyToOne",
@@ -52,6 +44,18 @@
     },
     "Kod_Pocztowy": {
       "type": "string"
+    },
+    "Szczegoly": {
+      "type": "dynamiczone",
+      "components": [
+        "zamowienie.szczegoly"
+      ]
+    },
+    "Numer_Zamowienia": {
+      "type": "string"
+    },
+    "Zwrocone": {
+      "type": "boolean"
     }
   }
 }
