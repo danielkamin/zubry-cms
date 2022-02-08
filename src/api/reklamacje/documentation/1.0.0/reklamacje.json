@@ -545,7 +545,7 @@
                                                           }
                                                         }
                                                       },
-                                                      "reklamacjes": {
+                                                      "Zwroty": {
                                                         "type": "object",
                                                         "properties": {
                                                           "data": {
@@ -559,15 +559,15 @@
                                                                 "attributes": {
                                                                   "type": "object",
                                                                   "properties": {
-                                                                    "DataReklamacji": {
+                                                                    "DataZwrotu": {
                                                                       "type": "string",
                                                                       "format": "date"
                                                                     },
-                                                                    "DataZrealizowaniaReklamacji": {
+                                                                    "DataPrzyjeciaZwrotu": {
                                                                       "type": "string",
                                                                       "format": "date"
                                                                     },
-                                                                    "Zrealizowana": {
+                                                                    "Zrealizowany": {
                                                                       "type": "boolean"
                                                                     },
                                                                     "Notatka": {
@@ -590,7 +590,7 @@
                                                                         }
                                                                       }
                                                                     },
-                                                                    "User": {
+                                                                    "user": {
                                                                       "type": "object",
                                                                       "properties": {
                                                                         "data": {
@@ -1384,23 +1384,6 @@
                                             }
                                           }
                                         }
-                                      }
-                                    }
-                                  }
-                                }
-                              },
-                              "User": {
-                                "type": "object",
-                                "properties": {
-                                  "data": {
-                                    "type": "object",
-                                    "properties": {
-                                      "id": {
-                                        "type": "string"
-                                      },
-                                      "attributes": {
-                                        "type": "object",
-                                        "properties": {}
                                       }
                                     }
                                   }
@@ -2256,7 +2239,7 @@
                                                         }
                                                       }
                                                     },
-                                                    "reklamacjes": {
+                                                    "Zwroty": {
                                                       "type": "object",
                                                       "properties": {
                                                         "data": {
@@ -2270,15 +2253,15 @@
                                                               "attributes": {
                                                                 "type": "object",
                                                                 "properties": {
-                                                                  "DataReklamacji": {
+                                                                  "DataZwrotu": {
                                                                     "type": "string",
                                                                     "format": "date"
                                                                   },
-                                                                  "DataZrealizowaniaReklamacji": {
+                                                                  "DataPrzyjeciaZwrotu": {
                                                                     "type": "string",
                                                                     "format": "date"
                                                                   },
-                                                                  "Zrealizowana": {
+                                                                  "Zrealizowany": {
                                                                     "type": "boolean"
                                                                   },
                                                                   "Notatka": {
@@ -2301,7 +2284,7 @@
                                                                       }
                                                                     }
                                                                   },
-                                                                  "User": {
+                                                                  "user": {
                                                                     "type": "object",
                                                                     "properties": {
                                                                       "data": {
@@ -3100,23 +3083,6 @@
                                 }
                               }
                             },
-                            "User": {
-                              "type": "object",
-                              "properties": {
-                                "data": {
-                                  "type": "object",
-                                  "properties": {
-                                    "id": {
-                                      "type": "string"
-                                    },
-                                    "attributes": {
-                                      "type": "object",
-                                      "properties": {}
-                                    }
-                                  }
-                                }
-                              }
-                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -3345,17 +3311,6 @@
                         "type": "string"
                       },
                       "zamowienie": {
-                        "oneOf": [
-                          {
-                            "type": "integer"
-                          },
-                          {
-                            "type": "string"
-                          }
-                        ],
-                        "example": "string or id"
-                      },
-                      "User": {
                         "oneOf": [
                           {
                             "type": "integer"
@@ -3948,7 +3903,7 @@
                                                         }
                                                       }
                                                     },
-                                                    "reklamacjes": {
+                                                    "Zwroty": {
                                                       "type": "object",
                                                       "properties": {
                                                         "data": {
@@ -3962,15 +3917,15 @@
                                                               "attributes": {
                                                                 "type": "object",
                                                                 "properties": {
-                                                                  "DataReklamacji": {
+                                                                  "DataZwrotu": {
                                                                     "type": "string",
                                                                     "format": "date"
                                                                   },
-                                                                  "DataZrealizowaniaReklamacji": {
+                                                                  "DataPrzyjeciaZwrotu": {
                                                                     "type": "string",
                                                                     "format": "date"
                                                                   },
-                                                                  "Zrealizowana": {
+                                                                  "Zrealizowany": {
                                                                     "type": "boolean"
                                                                   },
                                                                   "Notatka": {
@@ -3993,7 +3948,7 @@
                                                                       }
                                                                     }
                                                                   },
-                                                                  "User": {
+                                                                  "user": {
                                                                     "type": "object",
                                                                     "properties": {
                                                                       "data": {
@@ -4787,23 +4742,6 @@
                                           }
                                         }
                                       }
-                                    }
-                                  }
-                                }
-                              }
-                            },
-                            "User": {
-                              "type": "object",
-                              "properties": {
-                                "data": {
-                                  "type": "object",
-                                  "properties": {
-                                    "id": {
-                                      "type": "string"
-                                    },
-                                    "attributes": {
-                                      "type": "object",
-                                      "properties": {}
                                     }
                                   }
                                 }
@@ -5568,7 +5506,7 @@
                                                         }
                                                       }
                                                     },
-                                                    "reklamacjes": {
+                                                    "Zwroty": {
                                                       "type": "object",
                                                       "properties": {
                                                         "data": {
@@ -5582,15 +5520,15 @@
                                                               "attributes": {
                                                                 "type": "object",
                                                                 "properties": {
-                                                                  "DataReklamacji": {
+                                                                  "DataZwrotu": {
                                                                     "type": "string",
                                                                     "format": "date"
                                                                   },
-                                                                  "DataZrealizowaniaReklamacji": {
+                                                                  "DataPrzyjeciaZwrotu": {
                                                                     "type": "string",
                                                                     "format": "date"
                                                                   },
-                                                                  "Zrealizowana": {
+                                                                  "Zrealizowany": {
                                                                     "type": "boolean"
                                                                   },
                                                                   "Notatka": {
@@ -5613,7 +5551,7 @@
                                                                       }
                                                                     }
                                                                   },
-                                                                  "User": {
+                                                                  "user": {
                                                                     "type": "object",
                                                                     "properties": {
                                                                       "data": {
@@ -6412,23 +6350,6 @@
                                 }
                               }
                             },
-                            "User": {
-                              "type": "object",
-                              "properties": {
-                                "data": {
-                                  "type": "object",
-                                  "properties": {
-                                    "id": {
-                                      "type": "string"
-                                    },
-                                    "attributes": {
-                                      "type": "object",
-                                      "properties": {}
-                                    }
-                                  }
-                                }
-                              }
-                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -6668,17 +6589,6 @@
                         "type": "string"
                       },
                       "zamowienie": {
-                        "oneOf": [
-                          {
-                            "type": "integer"
-                          },
-                          {
-                            "type": "string"
-                          }
-                        ],
-                        "example": "string or id"
-                      },
-                      "User": {
                         "oneOf": [
                           {
                             "type": "integer"

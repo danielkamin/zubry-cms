@@ -75,11 +75,11 @@
       "target": "api::zamowienie.zamowienie",
       "mappedBy": "user"
     },
-    "reklamacjes": {
+    "Zwroty": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::reklamacje.reklamacje",
-      "mappedBy": "User"
+      "target": "api::zwroty.zwroty",
+      "mappedBy": "user"
     }
   }
 }

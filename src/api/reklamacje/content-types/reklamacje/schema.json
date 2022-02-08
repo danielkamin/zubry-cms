@@ -27,12 +27,6 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::zamowienie.zamowienie"
-    },
-    "User": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "reklamacjes"
     }
   }
 }
