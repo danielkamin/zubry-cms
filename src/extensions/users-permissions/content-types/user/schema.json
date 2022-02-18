@@ -63,12 +63,6 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "Imie": {
-      "type": "string"
-    },
-    "Nazwisko": {
-      "type": "string"
-    },
     "zamowienie": {
       "type": "relation",
       "relation": "oneToMany",

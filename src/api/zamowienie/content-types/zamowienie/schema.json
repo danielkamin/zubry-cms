@@ -56,6 +56,15 @@
     },
     "Zwrocone": {
       "type": "boolean"
+    },
+    "Nazwisko": {
+      "type": "string"
+    },
+    "Imie": {
+      "type": "string"
+    },
+    "Telefon": {
+      "type": "string"
     }
   }
 }

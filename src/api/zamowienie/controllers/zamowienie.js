@@ -20,9 +20,10 @@ module.exports = createCoreController(
     <h3>Potwierdzenie zamówienia nr ${orderData.data.Numer_Zamowienia}</h3>
     <div style='display:flex;flex-direction:column;'>
       <p><b>Dane do zamówienia:</b></p>
-      <span>${user.Imie}</span>
-      <span>${user.Nazwisko}</span>
       <span>${user.email}</span>
+      <span>${orderData.data.Telefon}</span>
+      <span>${orderData.data.Imie}</span>
+      <span>${orderData.data.Nazwisko}</span>
       <span>${orderData.data.Miasto}</span>
       <span>${orderData.data.Numer_Budynku}</span>
       <span>${orderData.data.Numer_Mieszkania}</span>
@@ -30,7 +31,7 @@ module.exports = createCoreController(
     </div>
     <p><b>Opcjonalna notatka do zamówienia:</b> ${orderData.data.Notatka}</p>
     <br/>
-    <table>
+    <table style="text-align:center;">
       <tr>
         <th>Produkt</th>
         <th>Rozmiar</th>

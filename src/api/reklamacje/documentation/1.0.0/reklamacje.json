@@ -519,12 +519,6 @@
                                                           }
                                                         }
                                                       },
-                                                      "Imie": {
-                                                        "type": "string"
-                                                      },
-                                                      "Nazwisko": {
-                                                        "type": "string"
-                                                      },
                                                       "zamowienie": {
                                                         "type": "object",
                                                         "properties": {
@@ -1340,6 +1334,15 @@
                                           },
                                           "Zwrocone": {
                                             "type": "boolean"
+                                          },
+                                          "Nazwisko": {
+                                            "type": "string"
+                                          },
+                                          "Imie": {
+                                            "type": "string"
+                                          },
+                                          "Telefon": {
+                                            "type": "string"
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -2213,12 +2216,6 @@
                                                         }
                                                       }
                                                     },
-                                                    "Imie": {
-                                                      "type": "string"
-                                                    },
-                                                    "Nazwisko": {
-                                                      "type": "string"
-                                                    },
                                                     "zamowienie": {
                                                       "type": "object",
                                                       "properties": {
@@ -3034,6 +3031,15 @@
                                         },
                                         "Zwrocone": {
                                           "type": "boolean"
+                                        },
+                                        "Nazwisko": {
+                                          "type": "string"
+                                        },
+                                        "Imie": {
+                                          "type": "string"
+                                        },
+                                        "Telefon": {
+                                          "type": "string"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -3877,12 +3883,6 @@
                                                         }
                                                       }
                                                     },
-                                                    "Imie": {
-                                                      "type": "string"
-                                                    },
-                                                    "Nazwisko": {
-                                                      "type": "string"
-                                                    },
                                                     "zamowienie": {
                                                       "type": "object",
                                                       "properties": {
@@ -4698,6 +4698,15 @@
                                         },
                                         "Zwrocone": {
                                           "type": "boolean"
+                                        },
+                                        "Nazwisko": {
+                                          "type": "string"
+                                        },
+                                        "Imie": {
+                                          "type": "string"
+                                        },
+                                        "Telefon": {
+                                          "type": "string"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -5480,12 +5489,6 @@
                                                         }
                                                       }
                                                     },
-                                                    "Imie": {
-                                                      "type": "string"
-                                                    },
-                                                    "Nazwisko": {
-                                                      "type": "string"
-                                                    },
                                                     "zamowienie": {
                                                       "type": "object",
                                                       "properties": {
@@ -6301,6 +6304,15 @@
                                         },
                                         "Zwrocone": {
                                           "type": "boolean"
+                                        },
+                                        "Nazwisko": {
+                                          "type": "string"
+                                        },
+                                        "Imie": {
+                                          "type": "string"
+                                        },
+                                        "Telefon": {
+                                          "type": "string"
                                         },
                                         "createdAt": {
                                           "type": "string",
