@@ -3,8 +3,7 @@ const path = require("path");
 module.exports = ({ env }) => ({
   wysiwyg: {
     enabled: true,
-    resolve: path.resolve(__dirname, "../src/plugins/wysiwyg"),
-    config: {},
+    resolve: "./src/plugins/wysiwyg",
   },
   email: {
     config: {

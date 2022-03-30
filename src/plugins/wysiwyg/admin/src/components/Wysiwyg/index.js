@@ -1,94 +1,115 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { isEmpty } from "lodash";
-import { Label, InputDescription, InputErrors } from "@strapi/helper-plugin";
+import { Stack } from "@strapi/design-system/Stack";
+import { Box } from "@strapi/design-system/Box";
+import { Button } from "@strapi/design-system/Button";
+import { Typography } from "@strapi/design-system/Typography";
+import Landscape from "@strapi/icons/Landscape";
 import MediaLib from "../MediaLib";
-import TinyEditor from "../Tinymce";
+import Editor from "../Editor";
+import { useIntl } from "react-intl";
+
 const Wysiwyg = ({
-  inputDescription,
-  errors,
-  label,
   name,
-  noErrorsDescription,
   onChange,
   value,
+  intlLabel,
+  disabled,
+  error,
+  description,
+  required,
 }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  let spacer = !isEmpty(inputDescription) ? (
-    <div style={{ height: ".4rem" }} />
-  ) : (
-    <div />
-  );
-  if (!noErrorsDescription && !isEmpty(errors)) {
-    spacer = <div />;
-  }
-  const handleChange = (data) => {
-    if (data.mime.includes("image")) {
-      const imgTag = `<p><img src="${data.url}" caption="${data.caption}" alt="${data.alternativeText}"></img></p>`;
-      const newValue = value ? `${value}${imgTag}` : imgTag;
-      onChange({ target: { name, value: newValue } });
-    }
-    // Handle videos and other type of files by adding some code
+  const { formatMessage } = useIntl();
+  const [mediaLibVisible, setMediaLibVisible] = useState(false);
+
+  const handleToggleMediaLib = () => setMediaLibVisible((prev) => !prev);
+
+  const handleChangeAssets = (assets) => {
+    let newValue = value ? value : "";
+
+    assets.map((asset) => {
+      if (asset.mime.includes("image")) {
+        const imgTag = `<p><img src="${asset.url}" alt="${asset.alt}"></img></p>`;
+
+        newValue = `${newValue}${imgTag}`;
+      }
+
+      // Handle videos and other type of files by adding some code
+    });
+
+    onChange({ target: { name, value: newValue } });
+    handleToggleMediaLib();
   };
-  const handleToggle = () => setIsOpen((prev) => !prev);
+
   return (
-    <div
-      style={{
-        marginBottom: "1.6rem",
-        fontSize: "1.3rem",
-        fontFamily: "Lato",
-      }}
-    >
-      <Label htmlFor={name} message={label} style={{ marginBottom: 10 }} />
-      <div style={{ position: "absolute", right: "15px", top: "-10px" }}>
-        <button onClick={handleToggle}>MediaLib</button>
-      </div>
-      <TinyEditor name={name} onChange={onChange} value={value} />
-      <InputDescription
-        message={inputDescription}
-        style={!isEmpty(inputDescription) ? { marginTop: "1.4rem" } : {}}
-      />
-      <InputErrors
-        errors={(!noErrorsDescription && errors) || []}
-        name={name}
-      />
-      {spacer}
+    <>
+      <Stack size={1}>
+        <Box>
+          <Typography variant="pi" fontWeight="bold">
+            {formatMessage(intlLabel)}
+          </Typography>
+          {required && (
+            <Typography variant="pi" fontWeight="bold" textColor="danger600">
+              *
+            </Typography>
+          )}
+        </Box>
+        <Button
+          startIcon={<Landscape />}
+          variant="secondary"
+          fullWidth
+          onClick={handleToggleMediaLib}
+        >
+          Media library
+        </Button>
+        <Editor
+          disabled={disabled}
+          name={name}
+          onChange={onChange}
+          value={value}
+        />
+        {error && (
+          <Typography variant="pi" textColor="danger600">
+            {formatMessage({ id: error, defaultMessage: error })}
+          </Typography>
+        )}
+        {description && (
+          <Typography variant="pi">{formatMessage(description)}</Typography>
+        )}
+      </Stack>
       <MediaLib
-        onToggle={handleToggle}
-        isOpen={isOpen}
-        onChange={handleChange}
+        isOpen={mediaLibVisible}
+        onChange={handleChangeAssets}
+        onToggle={handleToggleMediaLib}
       />
-    </div>
+    </>
   );
 };
+
 Wysiwyg.defaultProps = {
-  errors: [],
-  inputDescription: null,
-  label: "",
-  noErrorsDescription: false,
+  description: "",
+  disabled: false,
+  error: undefined,
+  intlLabel: "",
+  required: false,
   value: "",
 };
+
 Wysiwyg.propTypes = {
-  errors: PropTypes.array,
-  inputDescription: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.func,
-    PropTypes.shape({
-      id: PropTypes.string,
-      params: PropTypes.object,
-    }),
-  ]),
-  label: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.func,
-    PropTypes.shape({
-      id: PropTypes.string,
-      params: PropTypes.object,
-    }),
-  ]),
+  description: PropTypes.shape({
+    id: PropTypes.string,
+    defaultMessage: PropTypes.string,
+  }),
+  disabled: PropTypes.bool,
+  error: PropTypes.string,
+  intlLabel: PropTypes.shape({
+    id: PropTypes.string,
+    defaultMessage: PropTypes.string,
+  }),
   name: PropTypes.string.isRequired,
-  noErrorsDescription: PropTypes.bool,
   onChange: PropTypes.func.isRequired,
+  required: PropTypes.bool,
   value: PropTypes.string,
 };
+
 export default Wysiwyg;
