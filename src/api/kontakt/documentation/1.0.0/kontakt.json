@@ -4,6 +4,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -589,11 +590,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/kontakt"
       },
       "put": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1075,6 +1077,7 @@
           "Kontakt"
         ],
         "parameters": [],
+        "operationId": "put/kontakt",
         "requestBody": {
           "required": true,
           "content": {
@@ -1138,6 +1141,7 @@
       "delete": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1297,7 +1301,7 @@
           "Kontakt"
         ],
         "parameters": [],
-        "requestBody": {}
+        "operationId": "delete/kontakt"
       }
     }
   }

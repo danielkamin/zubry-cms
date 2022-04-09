@@ -4,6 +4,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -953,11 +954,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/galeria"
       },
       "put": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1803,6 +1805,7 @@
           "Galeria"
         ],
         "parameters": [],
+        "operationId": "put/galeria",
         "requestBody": {
           "required": true,
           "content": {
@@ -1871,6 +1874,7 @@
       "delete": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -2030,7 +2034,7 @@
           "Galeria"
         ],
         "parameters": [],
-        "requestBody": {}
+        "operationId": "delete/galeria"
       }
     }
   }

@@ -4,6 +4,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -601,11 +602,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/adresses"
       },
       "post": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1099,6 +1101,7 @@
           "Adres"
         ],
         "parameters": [],
+        "operationId": "post/adresses",
         "requestBody": {
           "required": true,
           "content": {
@@ -1176,6 +1179,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1680,11 +1684,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/adresses/{id}"
       },
       "put": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -2189,6 +2194,7 @@
             }
           }
         ],
+        "operationId": "put/adresses/{id}",
         "requestBody": {
           "required": true,
           "content": {
@@ -2264,6 +2270,7 @@
       "delete": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -2434,7 +2441,7 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "delete/adresses/{id}"
       }
     }
   }

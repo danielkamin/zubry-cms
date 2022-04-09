@@ -4,6 +4,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1715,11 +1716,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/zwroties"
       },
       "post": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -3327,6 +3329,7 @@
           "Zwroty"
         ],
         "parameters": [],
+        "operationId": "post/zwroties",
         "requestBody": {
           "required": true,
           "content": {
@@ -3415,6 +3418,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -5033,11 +5037,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/zwroties/{id}"
       },
       "put": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -6656,6 +6661,7 @@
             }
           }
         ],
+        "operationId": "put/zwroties/{id}",
         "requestBody": {
           "required": true,
           "content": {
@@ -6742,6 +6748,7 @@
       "delete": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -6912,7 +6919,7 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "delete/zwroties/{id}"
       }
     }
   }

@@ -4,6 +4,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -592,11 +593,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/ustawienia-pz-kosz"
       },
       "put": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1081,6 +1083,7 @@
           "Ustawienia-pz-kosz"
         ],
         "parameters": [],
+        "operationId": "put/ustawienia-pz-kosz",
         "requestBody": {
           "required": true,
           "content": {
@@ -1147,6 +1150,7 @@
       "delete": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1306,7 +1310,7 @@
           "Ustawienia-pz-kosz"
         ],
         "parameters": [],
-        "requestBody": {}
+        "operationId": "delete/ustawienia-pz-kosz"
       }
     }
   }

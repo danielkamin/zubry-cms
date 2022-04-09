@@ -4,6 +4,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -596,11 +597,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/terminarz-u19s"
       },
       "post": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1089,6 +1091,7 @@
           "Terminarz-u19"
         ],
         "parameters": [],
+        "operationId": "post/terminarz-u19s",
         "requestBody": {
           "required": true,
           "content": {
@@ -1161,6 +1164,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1660,11 +1664,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/terminarz-u19s/{id}"
       },
       "put": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -2164,6 +2169,7 @@
             }
           }
         ],
+        "operationId": "put/terminarz-u19s/{id}",
         "requestBody": {
           "required": true,
           "content": {
@@ -2234,6 +2240,7 @@
       "delete": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -2404,7 +2411,7 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "delete/terminarz-u19s/{id}"
       }
     }
   }

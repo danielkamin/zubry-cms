@@ -4,6 +4,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -966,11 +967,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/zawodnicy-3-lms"
       },
       "post": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1829,6 +1831,7 @@
           "Zawodnicy-3-lm"
         ],
         "parameters": [],
+        "operationId": "post/zawodnicy-3-lms",
         "requestBody": {
           "required": true,
           "content": {
@@ -1912,6 +1915,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -2781,11 +2785,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/zawodnicy-3-lms/{id}"
       },
       "put": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -3655,6 +3660,7 @@
             }
           }
         ],
+        "operationId": "put/zawodnicy-3-lms/{id}",
         "requestBody": {
           "required": true,
           "content": {
@@ -3736,6 +3742,7 @@
       "delete": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -3906,7 +3913,7 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "delete/zawodnicy-3-lms/{id}"
       }
     }
   }

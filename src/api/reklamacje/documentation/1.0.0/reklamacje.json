@@ -4,6 +4,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1698,11 +1699,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/reklamacjes"
       },
       "post": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -3293,6 +3295,7 @@
           "Reklamacje"
         ],
         "parameters": [],
+        "operationId": "post/reklamacjes",
         "requestBody": {
           "required": true,
           "content": {
@@ -3370,6 +3373,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -4971,11 +4975,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/reklamacjes/{id}"
       },
       "put": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -6577,6 +6582,7 @@
             }
           }
         ],
+        "operationId": "put/reklamacjes/{id}",
         "requestBody": {
           "required": true,
           "content": {
@@ -6652,6 +6658,7 @@
       "delete": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -6822,7 +6829,7 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "delete/reklamacjes/{id}"
       }
     }
   }

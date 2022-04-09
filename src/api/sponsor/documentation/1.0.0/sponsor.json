@@ -4,6 +4,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -965,11 +966,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/sponsors"
       },
       "post": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1827,6 +1829,7 @@
           "Sponsor"
         ],
         "parameters": [],
+        "operationId": "post/sponsors",
         "requestBody": {
           "required": true,
           "content": {
@@ -1909,6 +1912,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -2777,11 +2781,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/sponsors/{id}"
       },
       "put": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -3650,6 +3655,7 @@
             }
           }
         ],
+        "operationId": "put/sponsors/{id}",
         "requestBody": {
           "required": true,
           "content": {
@@ -3730,6 +3736,7 @@
       "delete": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -3900,7 +3907,7 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "delete/sponsors/{id}"
       }
     }
   }

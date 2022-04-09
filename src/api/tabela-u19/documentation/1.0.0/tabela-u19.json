@@ -4,6 +4,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -598,11 +599,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/tabela-u19s"
       },
       "post": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1093,6 +1095,7 @@
           "Tabela-u19"
         ],
         "parameters": [],
+        "operationId": "post/tabela-u19s",
         "requestBody": {
           "required": true,
           "content": {
@@ -1167,6 +1170,7 @@
       "get": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -1668,11 +1672,12 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "get/tabela-u19s/{id}"
       },
       "put": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -2174,6 +2179,7 @@
             }
           }
         ],
+        "operationId": "put/tabela-u19s/{id}",
         "requestBody": {
           "required": true,
           "content": {
@@ -2246,6 +2252,7 @@
       "delete": {
         "responses": {
           "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -2416,7 +2423,7 @@
             }
           }
         ],
-        "requestBody": {}
+        "operationId": "delete/tabela-u19s/{id}"
       }
     }
   }
