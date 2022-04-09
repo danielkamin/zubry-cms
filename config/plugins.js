@@ -1,10 +1,6 @@
 const path = require("path");
 
 module.exports = ({ env }) => ({
-  wysiwyg: {
-    enabled: true,
-    resolve: "./src/plugins/wysiwyg",
-  },
   email: {
     config: {
       provider: "nodemailer",
