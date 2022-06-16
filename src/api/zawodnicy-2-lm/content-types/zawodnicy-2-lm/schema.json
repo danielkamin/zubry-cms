@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "zawodnicy_2_lms",
+  "info": {
+    "singularName": "zawodnicy-2-lm",
+    "pluralName": "zawodnicy-2-lms",
+    "displayName": "Zawodnicy 2LM"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Number": {
+      "type": "integer"
+    },
+    "First_Name": {
+      "type": "string"
+    },
+    "Last_Name": {
+      "type": "string"
+    },
+    "Birthday": {
+      "type": "date"
+    },
+    "Position": {
+      "type": "string"
+    },
+    "Photo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
