@@ -5,7 +5,7 @@ module.exports = ({ env }) => ({
     config: {
       provider: "nodemailer",
       providerOptions: {
-        host: env("SMTP_HOST", "smtp.gmail.com"),
+        host: env("SMTP_HOST", "smtp.wp.pl"),
         port: 465,
         secure: true,
         auth: {
@@ -17,8 +17,8 @@ module.exports = ({ env }) => ({
         },
       },
       settings: {
-        defaultFrom: "zubryleospedbialystok@gmail.com",
-        defaultReplyTo: "zubryleospedbialystok@gmail.com",
+        defaultFrom: "zubrybiuro@wp.pl",
+        defaultReplyTo: "zubrybiuro@wp.pl",
       },
     },
   },
