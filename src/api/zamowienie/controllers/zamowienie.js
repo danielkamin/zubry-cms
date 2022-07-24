@@ -32,7 +32,6 @@ const createBodyTag = (user, orderProducts, orderDetails) => {
   orderProducts.forEach((product) => {
     orderProductsRows += `<tr><td>${product.Produkt}</td><td>${product.Rozmiar}</td><td>${product.Ilosc}</td></tr>`;
   });
-
   return `<body>
     <main>
       <h3>Potwierdzenie zamówienia nr ${orderDetails.Numer_Zamowienia}</h3>
@@ -45,6 +44,7 @@ const createBodyTag = (user, orderProducts, orderDetails) => {
           <th>Imię</th>
           <th>Nazwisko</th>
           <th>Miasto</th>
+          <th>Ulica</th>
           <th>Numer budynku</th>
           <th>Numer lokalu/mieszkania</th>
           <th>Kod pocztowy</th>
@@ -55,6 +55,7 @@ const createBodyTag = (user, orderProducts, orderDetails) => {
           <td>${orderDetails.Imie}</td>
           <td>${orderDetails.Nazwisko}</td>
           <td>${orderDetails.Miasto}</td>
+          <td>${orderDetails.Ulica}</td>
           <td>${orderDetails.Numer_Budynku}</td>
           <td>${orderDetails.Numer_Mieszkania}</td>
           <td>${orderDetails.Kod_Pocztowy}</td>
@@ -102,8 +103,10 @@ module.exports = createCoreController(
       );
       try {
         await strapi.plugins["email"].services.email.send({
-          to: process.env.EMAIL_ADMIN,
+          from: `Sklep Żubry Białystok <${process.env.EMAIL_ADMIN}>`,
+          to: `Sklep Żubry Białystok <${process.env.EMAIL_ADMIN}>`,
           subject: `Potwierdzenie zamówienia nr ${orderData.data.Numer_Zamowienia}`,
+          replyTo: `${user.email}`,
           html: emailTemplate,
           attachments: [
             {
@@ -114,9 +117,17 @@ module.exports = createCoreController(
           ],
         });
         strapi.plugins["email"].services.email.send({
-          to: user.email,
+          from: `Sklep Żubry Białystok <${process.env.EMAIL_ADMIN}>`,
+          to: `${user.Imie} ${user.Nazwisko} <${user.email}>`,
           subject: `Potwierdzenie zamówienia nr ${orderData.data.Numer_Zamowienia}`,
           html: emailTemplate,
+          attachments: [
+            {
+              filename: "logo.png",
+              path: path.join(__dirname, "../../../extensions/email/logo.png"),
+              cid: "logo",
+            },
+          ],
         });
         ctx.send({ data: "ok" });
       } catch (err) {

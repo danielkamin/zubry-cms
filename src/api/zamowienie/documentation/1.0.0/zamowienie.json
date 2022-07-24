@@ -1188,6 +1188,9 @@
                                                         "Telefon": {
                                                           "type": "string"
                                                         },
+                                                        "Ulica": {
+                                                          "type": "string"
+                                                        },
                                                         "createdAt": {
                                                           "type": "string",
                                                           "format": "date-time"
@@ -1476,6 +1479,9 @@
                                 "type": "string"
                               },
                               "Telefon": {
+                                "type": "string"
+                              },
+                              "Ulica": {
                                 "type": "string"
                               },
                               "createdAt": {
@@ -2971,6 +2977,9 @@
                                                       "Telefon": {
                                                         "type": "string"
                                                       },
+                                                      "Ulica": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -3259,6 +3268,9 @@
                               "type": "string"
                             },
                             "Telefon": {
+                              "type": "string"
+                            },
+                            "Ulica": {
                               "type": "string"
                             },
                             "createdAt": {
@@ -3568,6 +3580,9 @@
                         "type": "string"
                       },
                       "Telefon": {
+                        "type": "string"
+                      },
+                      "Ulica": {
                         "type": "string"
                       },
                       "createdAt": {
@@ -4795,6 +4810,9 @@
                                                       "Telefon": {
                                                         "type": "string"
                                                       },
+                                                      "Ulica": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -5083,6 +5101,9 @@
                               "type": "string"
                             },
                             "Telefon": {
+                              "type": "string"
+                            },
+                            "Ulica": {
                               "type": "string"
                             },
                             "createdAt": {
@@ -6487,6 +6508,9 @@
                                                       "Telefon": {
                                                         "type": "string"
                                                       },
+                                                      "Ulica": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -6775,6 +6799,9 @@
                               "type": "string"
                             },
                             "Telefon": {
+                              "type": "string"
+                            },
+                            "Ulica": {
                               "type": "string"
                             },
                             "createdAt": {
@@ -7095,6 +7122,9 @@
                         "type": "string"
                       },
                       "Telefon": {
+                        "type": "string"
+                      },
+                      "Ulica": {
                         "type": "string"
                       },
                       "createdAt": {

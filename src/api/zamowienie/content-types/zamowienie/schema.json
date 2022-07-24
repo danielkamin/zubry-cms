@@ -65,6 +65,9 @@
     },
     "Telefon": {
       "type": "string"
+    },
+    "Ulica": {
+      "type": "string"
     }
   }
 }

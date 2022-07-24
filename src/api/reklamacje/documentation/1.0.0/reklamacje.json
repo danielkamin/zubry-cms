@@ -1345,6 +1345,9 @@
                                           "Telefon": {
                                             "type": "string"
                                           },
+                                          "Ulica": {
+                                            "type": "string"
+                                          },
                                           "createdAt": {
                                             "type": "string",
                                             "format": "date-time"
@@ -3043,6 +3046,9 @@
                                         "Telefon": {
                                           "type": "string"
                                         },
+                                        "Ulica": {
+                                          "type": "string"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -4712,6 +4718,9 @@
                                         "Telefon": {
                                           "type": "string"
                                         },
+                                        "Ulica": {
+                                          "type": "string"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -6317,6 +6326,9 @@
                                           "type": "string"
                                         },
                                         "Telefon": {
+                                          "type": "string"
+                                        },
+                                        "Ulica": {
                                           "type": "string"
                                         },
                                         "createdAt": {
